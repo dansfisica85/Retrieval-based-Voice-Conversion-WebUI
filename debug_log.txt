@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "C:\Users\davi.silva\TTSdavi-1\rvc\infer-web.py", line 8, in <module>
+    from infer.modules.vc.modules import VC
+  File "C:\Users\davi.silva\TTSdavi-1\rvc\infer\modules\vc\modules.py", line 19, in <module>
+    from infer.modules.vc.utils import *
+  File "C:\Users\davi.silva\TTSdavi-1\rvc\infer\modules\vc\utils.py", line 3, in <module>
+    from fairseq import checkpoint_utils
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\fairseq\__init__.py", line 20, in <module>
+    from fairseq.distributed import utils as distributed_utils
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\fairseq\distributed\__init__.py", line 7, in <module>
+    from .fully_sharded_data_parallel import (
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\fairseq\distributed\fully_sharded_data_parallel.py", line 10, in <module>
+    from fairseq.dataclass.configs import DistributedTrainingConfig
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\fairseq\dataclass\__init__.py", line 6, in <module>
+    from .configs import FairseqDataclass
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\fairseq\dataclass\configs.py", line 1104, in <module>
+    @dataclass
+     ^^^^^^^^^
+  File "C:\Python312\Lib\dataclasses.py", line 1275, in dataclass
+    return wrap(cls)
+           ^^^^^^^^^
+  File "C:\Python312\Lib\dataclasses.py", line 1265, in wrap
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\dataclasses.py", line 994, in _process_class
+    cls_fields.append(_get_field(cls, name, type, kw_only))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\dataclasses.py", line 852, in _get_field
+    raise ValueError(f'mutable default {type(f.default)} for field '
+ValueError: mutable default <class 'fairseq.dataclass.configs.CommonConfig'> for field common is not allowed: use default_factory
