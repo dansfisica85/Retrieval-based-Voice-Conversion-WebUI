@@ -1,0 +1,33 @@
+common - <dataclasses._MISSING_TYPE object at 0x000001F6D1C118B0>
+Traceback (most recent call last):
+  File "C:\Users\davi.silva\TTSdavi-1\rvc\infer-web.py", line 8, in <module>
+    from infer.modules.vc.modules import VC
+  File "C:\Users\davi.silva\TTSdavi-1\rvc\infer\modules\vc\modules.py", line 19, in <module>
+    from infer.modules.vc.utils import *
+  File "C:\Users\davi.silva\TTSdavi-1\rvc\infer\modules\vc\utils.py", line 3, in <module>
+    from fairseq import checkpoint_utils
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\fairseq\__init__.py", line 31, in <module>
+    hydra_init()
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\fairseq\dataclass\initialize.py", line 24, in hydra_init
+    cs.store(name=k, node=v)
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\hydra\core\config_store.py", line 85, in store
+    cfg = OmegaConf.structured(node)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\omegaconf\omegaconf.py", line 119, in structured
+    return OmegaConf.create(obj, parent, flags)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\omegaconf\omegaconf.py", line 172, in create
+    return OmegaConf._create_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\omegaconf\omegaconf.py", line 861, in _create_impl
+    format_and_raise(node=None, key=None, value=None, msg=str(e), cause=e)
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\omegaconf\_utils.py", line 818, in format_and_raise
+    _raise(ex, cause)
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\omegaconf\_utils.py", line 716, in _raise
+    raise ex.with_traceback(sys.exc_info()[2])  # set end OC_CAUSE=1 for full backtrace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\omegaconf\omegaconf.py", line 857, in _create_impl
+    raise ValidationError(
+omegaconf.errors.ValidationError: Object of unsupported type: '_MISSING_TYPE'
+    full_key: 
+    object_type=None

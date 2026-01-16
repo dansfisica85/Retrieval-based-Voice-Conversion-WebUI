@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "C:\Users\davi.silva\TTSdavi-1\rvc\infer-web.py", line 8, in <module>
+    from infer.modules.vc.modules import VC
+  File "C:\Users\davi.silva\TTSdavi-1\rvc\infer\modules\vc\modules.py", line 19, in <module>
+    from infer.modules.vc.utils import *
+  File "C:\Users\davi.silva\TTSdavi-1\rvc\infer\modules\vc\utils.py", line 3, in <module>
+    from fairseq import checkpoint_utils
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\fairseq\__init__.py", line 29, in <module>
+    from fairseq.dataclass.initialize import hydra_init
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\fairseq\dataclass\initialize.py", line 8, in <module>
+    from hydra.core.config_store import ConfigStore
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\hydra\__init__.py", line 5, in <module>
+    from hydra import utils
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\hydra\utils.py", line 8, in <module>
+    import hydra._internal.instantiate._instantiate2
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\hydra\_internal\instantiate\_instantiate2.py", line 11, in <module>
+    from hydra._internal.utils import _locate
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\hydra\_internal\utils.py", line 17, in <module>
+    from hydra.core.utils import get_valid_filename, validate_config_path
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\hydra\core\utils.py", line 19, in <module>
+    from hydra.core.hydra_config import HydraConfig
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\hydra\core\hydra_config.py", line 6, in <module>
+    from hydra.conf import HydraConf
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\hydra\conf\__init__.py", line 45, in <module>
+    class JobConf:
+  File "C:\Users\davi.silva\AppData\Roaming\Python\Python312\site-packages\hydra\conf\__init__.py", line 70, in JobConf
+    @dataclass
+     ^^^^^^^^^
+  File "C:\Python312\Lib\dataclasses.py", line 1275, in dataclass
+    return wrap(cls)
+           ^^^^^^^^^
+  File "C:\Python312\Lib\dataclasses.py", line 1265, in wrap
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\dataclasses.py", line 994, in _process_class
+    cls_fields.append(_get_field(cls, name, type, kw_only))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\dataclasses.py", line 852, in _get_field
+    raise ValueError(f'mutable default {type(f.default)} for field '
+ValueError: mutable default <class 'hydra.conf.JobConf.JobConfig.OverrideDirname'> for field override_dirname is not allowed: use default_factory
